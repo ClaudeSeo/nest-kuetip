@@ -1,0 +1,24 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "esnext",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "incremental": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["@types/*"],
+      "~/*": ["*"]
+    }
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts"]
+}
